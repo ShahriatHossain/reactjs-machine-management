@@ -1,0 +1,99 @@
+.RespTable {
+    width: 100%;
+    display: table;
+}
+
+.RespTableCaption{
+    display: table-caption;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.RespTableHeader{
+    display: table-header-group;
+    background-color: gray;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.TableHeaderCell{
+    color: #495057;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+    display: table-cell;
+    padding: 10px;
+    text-align: justify;
+}
+
+.RespTableBody{
+    display: table-row-group;
+}
+
+.RespTableRow{
+    display: table-row;
+}
+
+.TableBodyCell{
+    display: table-cell;
+    border: 1px solid #000;
+}
+
+.RespTableFooter {
+    display: table-footer-group;
+    background-color: gray;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.TableFooterCell{
+    display: table-cell;
+    padding: 10px;
+    text-align: justify;
+    border-bottom: 1px solid black;
+}
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .Right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .Left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  
+  .Up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    cursor: pointer;
+  }
+  
+  .Down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    cursor: pointer;
+  }
+
+  .Row {
+    display: flex;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .Column1 {
+    flex: 50%;
+    padding: 10px;
+  }
+
+  .Column2 {
+    flex: 25%;
+    padding: 10px;
+  }
