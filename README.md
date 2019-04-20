@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Challenge Requirements
+## Requirements
 You are tasked with developing an prototypical solution for displaying the collected data to our test users inside of a web browser. The objective is to give them an instant overview over the current health and activity of the installed machines.
 
 ## Applicaton Workflow
