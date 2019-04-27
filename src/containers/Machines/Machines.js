@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Table } from 'react-reusable-table';
 
 import axios from '../../axios-machines';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 import * as actions from '../../store/actions/index';
 import Spinner from '../../components/UI/Spinner/Spinner';
-import Table from '../../components/UI/Table/Table';
+//import Table from '../../components/UI/Table/Table';
 import * as utility from '../../shared/utility';
 import Input from '../../components/UI/Input/Input';
 import Modal from '../../components/UI/Modal/Modal';
@@ -54,6 +55,10 @@ class Machines extends Component {
         this.props.onSortMachines(colName, sortType, this.props.history);
     }
 
+    detailPageHandler = (id) => {
+        this.props.history.push('machines/' + id);
+    }
+
     // to dismiss error popup msg
     errorConfirmedHandler = () => {
         this.setState({ error: null });
@@ -69,9 +74,10 @@ class Machines extends Component {
         if (!this.props.loading) {
             machines = <Table
                 caption=""
-                headerCells={utility.getMachineTableHeaderCells()}
-                footerCells={utility.getMachineTableHeaderCells()}
                 data={this.props.machines}
+                detailPage={this.detailPageHandler}
+                footerCells={utility.getMachineTableHeaderCells()}
+                headerCells={utility.getMachineTableHeaderCells()}
                 showFooter={false}
                 sortedUporDown={this.sortMachinesHandler}
             />

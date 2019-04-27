@@ -8042,6 +8042,11 @@ react-redux@^6.0.1:
     prop-types "^15.7.2"
     react-is "^16.8.2"
 
+react-reusable-table@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/react-reusable-table/-/react-reusable-table-2.1.2.tgz#1a27f6ac14fcb1b374dfe6f7971bb03b841935e5"
+  integrity sha512-R0XF8KCAjmK6J6kOPGQeHD/Jx0oIKkEpfljMW3AFrlgLGX4ByVep0cI+iQZK9Fylb8HrasU1GRSfMmkEDOnMCw==
+
 react-router-dom@^4.3.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.3.1.tgz#4c2619fc24c4fa87c9fd18f4fb4a43fe63fbd5c6"
